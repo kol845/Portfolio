@@ -1,0 +1,43 @@
+{
+    "projects":[
+        
+            {
+                "name": "Future Key",
+                "context":{
+                    "headline":"Future Key",
+                    "description":"Vanila JS + Backend + Mail API"
+                },
+                "headline":{
+                    "name":"Future Key",
+                    "description":"Send your password to your future mail"
+                },
+                "info":[
+                    "Created for Hyper Island brief", "Frontend: Vanila JS", "Backend: Express JS + SQLite"
+                ],
+                "Learnings":[
+                    "Using npm packege 'nodemailer' to send emails",
+                    "Creating cronjobs for schedualing tasks"
+                ]
+            },
+            {
+                "name": "Daily Habits",
+                "context":{
+                    "headline":"Daily Habits",
+                    "description":"A lot of Vanila JS Logic"
+                },
+                "headline":{
+                    "name":"Daily Habits",
+                    "description":"Keep track of your habits"
+                },
+                "info":[
+                    "Created for Hyper Island brief", "Vanila JS", "Collaboration effort"
+                ],
+                "Learnings":[
+                    "Working with git",
+                    "Planing work",
+                    "Communication and coding with others"
+                ]
+            }
+        
+    ]
+}

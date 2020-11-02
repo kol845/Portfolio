@@ -1,0 +1,14 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.root{
+    display: grid;
+    grid-gap: 0px;
+    font-family: monospace;
+    background-color:#222222;
+    color:rgba(255, 255, 255, 0.900);
+}
+
+

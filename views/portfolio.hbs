@@ -11,24 +11,47 @@
         <div class="root">
             {{> header portfolioSelected=true}}
             <section id="portf_intro_container" class="section_container" style="background-color: orange;">
-                <img id="profile_picture" src="public/images/portfolio/transparent_round_profile.png" alt="Profile picture">
-                <div id="portf_welcome_message">
-                    <p style="font-weight: bold;">Welcome to my portfolio!</p><br/>
-                    <p>Here is a showcase of some projects that i’ve created during my years in KTH, Hyperisland and on my free time.</p>
+                <div id="welcome_container">
+                    <img id="profile_picture" src="public/images/portfolio/transparent_round_profile.png" alt="Profile picture">
+                    <div id="portf_welcome_message">
+                        <p style="font-weight: bold;">Welcome to my portfolio!</p><br/>
+                        <p>Here is a showcase of some projects that i’ve created during my years in KTH, Hyperisland and on my free time.</p>
+                    </div>
                 </div>
-                <div id="portf_content_container">
-                    {{#each projects}}
-                        <li>{{this.context.headline}} - {{this.context.description}}</li>
-                    {{/each}}
-                    
+
+                <div id="content_container">
+                    <h2>Content:</h2>
+                    <div id="portf_content_container">
+                        {{#each projects}}
+                            <li><em class="prim_bold">{{this.context.headline}}</em> - {{this.context.description}}</li>
+                        {{/each}}
+                    </div>
                 </div>
             </section>
+            <div class="ribbon">
+                <div>
+                    <p><em>Future Key</em> - Send your password to your future mail</p>
+                </div>
+            </div>
+            
             <section class="section_container_2">
-                
+
             </section>
+
+            <div class="ribbon" style="bottom:-85vh">
+                <div>
+                    <p><em>Future Key2</em> - Send your password to your future mail</p>
+                </div>
+            </div>
+
             <section class="section_container">
                 
             </section>
+            <div class="ribbon" style="bottom:-170vh">
+                <div>
+                    <p><em>Future Key3</em> - Send your password to your future mail</p>
+                </div>
+            </div>
             <section class="section_container_2">
                 
             </section>

@@ -1,8 +1,20 @@
+:root {
+    --background_first: rgb(34,34,34);
+    --background_second: rgb(78,78,78);
+    /* --background_first: rgb(255,255,255);
+    --background_second: rgb(155, 155, 155); */
+  }
 img{
     width:99.2vw;
     height:60vh;
     margin:0;
     padding:0;
+}
+.background_box{
+    width: 100%;
+    background-image: linear-gradient(to bottom right, var(--background_first) 10vh, var(--background_second));
+
+
 }
 .content_box{
     align-items: center;

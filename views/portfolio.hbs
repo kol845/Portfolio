@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" href="public/images/favicon.png">
         <link rel="stylesheet" type="text/css" href="public/css/reset.css">
         <link rel="stylesheet" type="text/css" href="public/css/global.css">
         <link rel="stylesheet" type="text/css" href="public/css/header.css">
         <link rel="stylesheet" type="text/css" href="public/css/portfolio.css">
-        <title>Creative</title>
+        <script rel="script" src="public/data/static.js"></script>
+        <script rel="script" defer src="public/portfolio/js/dom.js"></script>
+
+        <title>Portfolio</title>
     </head>
     <body>
         <div class="root">
             {{> header portfolioSelected=true}}
-            <section id="portf_intro_container" class="section_container" style="background-color: orange;">
+            <section class="section_container" style="background-color: orange;" id="portf_intro_container">
                 <div id="welcome_container">
-                    <img id="profile_picture" src="public/images/portfolio/transparent_round_profile.png" alt="Profile picture">
+                    <div id="profile_picture_container">
+                        <div class="line_seperator"></div>
+
+                        <img id="profile_picture" src="public/images/portfolio/transparent_round_profile.png" alt="Profile picture"></img>
+
+                    </div>
+
                     <div id="portf_welcome_message">
                         <p style="font-weight: bold;">Welcome to my portfolio!</p><br/>
                         <p>Here is a showcase of some projects that i’ve created during my years in KTH, Hyperisland and on my free time.</p>
@@ -22,39 +32,52 @@
                 <div id="content_container">
                     <h2>Content:</h2>
                     <div id="portf_content_container">
-                        {{#each projects}}
-                            <li><em class="prim_bold">{{this.context.headline}}</em> - {{this.context.description}}</li>
-                        {{/each}}
+
                     </div>
                 </div>
             </section>
-            <div class="ribbon">
-                <div>
-                    <p><em>Future Key</em> - Send your password to your future mail</p>
-                </div>
-            </div>
+
+
             
-            <section class="section_container_2">
 
-            </section>
 
-            <div class="ribbon" style="bottom:-85vh">
-                <div>
-                    <p><em>Future Key2</em> - Send your password to your future mail</p>
+
+
+            {{!-- <section class="section_container section_container_alt">
+                <div class="ribbon" style="top:600px">
+                    <div>
+                        <p><em>Future Key2</em> - Send your password to your future mail</p>
+                    </div>
                 </div>
-            </div>
+                <div class="context_container">
+                    <div class="context_container_2">
+                        <div class="context_container_3">
+                            <h2>Info</h2>
+                            <div class="i_l_seperation_bar"></div>
+                            <ul>
+                                <li>fun project made for fun</li>
+                                <li>cool project, made my me lmo lmo lmo</li>
+                            </ul>
+                        </div>
+                        <div class="context_container_3">
+                            <h2>Learnings</h2>
+                            <div class="i_l_seperation_bar"></div>
+                            <ul>
+                                <li>How to have fun</li>
+                                <li>Working in teams</li>
 
-            <section class="section_container">
-                
-            </section>
-            <div class="ribbon" style="bottom:-170vh">
-                <div>
-                    <p><em>Future Key3</em> - Send your password to your future mail</p>
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <section class="section_container_2">
-                
-            </section>
+                <div class="context_container_right">
+                    <div class="context_img_container">
+                        <img src="public/images/portfolio/futurekey.png" alt="FutureKey website">    
+                    </div>
+                </div>
+            </section> --}}
         </div>
+
     </body>
 </html>

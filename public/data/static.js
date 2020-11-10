@@ -1,9 +1,9 @@
-{
+const portfolioData = {
     "projects":[
         
             {
                 "name": "Future Key",
-                "context":{
+                "content":{
                     "headline":"Future Key",
                     "description":"Vanila JS + Backend + Mail API"
                 },
@@ -14,14 +14,15 @@
                 "info":[
                     "Created for Hyper Island brief", "Frontend: Vanila JS", "Backend: Express JS + SQLite"
                 ],
-                "Learnings":[
+                "learnings":[
                     "Using npm packege 'nodemailer' to send emails",
                     "Creating cronjobs for schedualing tasks"
-                ]
+                ],
+                "imgName":"futurekey.png"
             },
             {
                 "name": "Daily Habits",
-                "context":{
+                "content":{
                     "headline":"Daily Habits",
                     "description":"A lot of Vanila JS Logic"
                 },
@@ -32,12 +33,34 @@
                 "info":[
                     "Created for Hyper Island brief", "Vanila JS", "Collaboration effort"
                 ],
-                "Learnings":[
+                "learnings":[
                     "Working with git",
                     "Planing work",
                     "Communication and coding with others"
-                ]
-            }
+                ],
+                "imgName":"dailyhabits.png"
+            },
+            {
+                "name": "Alert",
+                "content":{
+                    "headline":"Alert",
+                    "description":"React Native + Python Flask Backend"
+                },
+                "headline":{
+                    "name":"Alert",
+                    "description":"Keep active track of your investments"
+                },
+                "info":[
+                    "Created on my free time", "Frontend: React Native", "Backend: Flask Python + SQLite"
+                ],
+                "learnings":[
+                    "React Native and Flask",
+                    "API management",
+                    "Backend deploment on Heroku platform",
+                    "Functioning login system"
+                ],
+                "imgName":"alert.png"
+            },
         
     ]
 }

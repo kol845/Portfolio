@@ -1,0 +1,31 @@
+#footer_root{
+    width:100vw;
+    background-color: black;
+    height:70px;
+    padding:20px;
+    padding-top: 30px;
+}
+.footer_content{
+    width:150px;
+    margin: auto;
+    text-align: center;
+    color: rgb(65,65,65);
+    
+}
+.footer_grid{
+    margin-bottom:20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+.footer_grid img{
+    width:40px;
+    height:40px;
+    margin:auto;
+    border-radius: 90%;
+}
+.footer_grid img:hover{
+    box-shadow: 0px 0px 15px 2px white;
+}

@@ -3,9 +3,10 @@ const portfolioData = {
         
             {
                 "name": "Future Key",
+                "idName": "future_key",
                 "content":{
                     "headline":"Future Key",
-                    "description":"Vanila JS + Backend + Mail API"
+                    "description":"Vanila JS + backend + mail API"
                 },
                 "headline":{
                     "name":"Future Key",
@@ -22,9 +23,10 @@ const portfolioData = {
             },
             {
                 "name": "Daily Habits",
+                "idName": "daily_habit",
                 "content":{
                     "headline":"Daily Habits",
-                    "description":"A lot of Vanila JS Logic"
+                    "description":"Complex vanila JS logic"
                 },
                 "headline":{
                     "name":"Daily Habits",
@@ -42,9 +44,10 @@ const portfolioData = {
             },
             {
                 "name": "Alert",
+                "idName": "alert",
                 "content":{
                     "headline":"Alert",
-                    "description":"React Native + Python Flask Backend"
+                    "description":"React Native + Python Flask backend"
                 },
                 "headline":{
                     "name":"Alert",

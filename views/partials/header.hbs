@@ -1,23 +1,29 @@
 <div class="header">
     <div class="header_content" id="myTopnav">
-        <a href="/" class="header_home">Pebo Hamza</a>
-        {{#if creativeSelected}}
-                <a href="/creative" class="header_links selected">Creative</a>
-        {{else}}
-        <a href="/creative" class="header_links">Creative</a>
-        {{/if}}
+        <span class="home_btn_container">
+            <a href="/" class="header_home" >Pebo Hamza</a>
+        </span>
+        <span class="link_btn_container">
+            {{#if portfolioSelected}}
+            <a href="/portfolio" class="header_links selected">Portfolio</a>
+            {{else}}
+            <a href="/portfolio" class="header_links">Portfolio</a>
+            {{/if}}
 
-        {{#if portfolioSelected}}
-        <a href="/portfolio" class="header_links selected">Portfolio</a>
-        {{else}}
-        <a href="/portfolio" class="header_links">Portfolio</a>
-        {{/if}}
+            {{#if creativeSelected}}
+                    <a href="/creative" class="header_links selected">Creative</a>
+            {{else}}
+            <a href="/creative" class="header_links">Creative</a>
+            {{/if}}
+        </span>
 
-        <a href="javascript:void(0);" class="hamburger icon" onclick="myFunction()">
+
+
+        {{!-- <a href="javascript:void(0);" class="hamburger icon" onclick="myFunction()">
             <div></div>
             <div></div>
             <div></div>
-        </a>
+        </a> --}}
         
     </div>
 </div>

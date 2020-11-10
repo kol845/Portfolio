@@ -53,7 +53,7 @@
 }
 
 #portf_intro_container #content_container{
-    width:30%;
+    width:50%;
     text-align: left;
     margin: auto auto;
 }
@@ -86,10 +86,30 @@
     font-weight: bold;
     font-size: 1.25em;
 }
-.prim_bold{
+.content_headline{
     color:#fc7e00;
     font-weight: bold;
+    text-align: start;
+    text-decoration: none;
 }
+.content_headline:hover{
+    letter-spacing: 1.5px;
+    cursor:pointer;
+}
+#portf_content_container p{
+    display:grid;
+    grid-template-columns:0.4fr 0.2fr 1fr;
+    align-items: center;
+    text-align: start;
+}
+.content_list_container{
+    display:list-item;
+    margin:20px 0px;
+}
+/* #portf_content_container li:hover{
+    letter-spacing: 1.5px;
+    cursor:pointer;
+} */
 .section_container{
     height:var(--section_height);
     width:100vw;
@@ -170,7 +190,7 @@
         margin:0px 20vw 0px 20px;
     }
     #portf_intro_container #content_container{
-        width:40%;
+        width:60%;
     }
     .context_img_container{
         width:100%;
@@ -196,13 +216,13 @@
 }
 @media only screen and (max-width: 1000px) {
     #portf_intro_container #content_container{
-        width:80%;
+        width:90%;
 
     }
 }
 @media only screen and (max-width: 700px) {
     #portf_intro_container #content_container{
-        width:100%;
+        width:95%;
     }
     #profile_picture_container{
         margin:0px 0vw 0px 20px;

@@ -1,7 +1,6 @@
 
 function addPortfolioCases(){
     let container = document.querySelector('#projects_container');
-    console.log(container)
     portfolioData.projects.forEach((project, i) => {
         let alt = ""
         if(i%2===0){ // Switch to alternative section_container, with the diffrent background image.
@@ -18,6 +17,9 @@ function addPortfolioCases(){
         //         </section>`;
         let listInfo = createListElement(project.info);
         let listLearnings = createListElement(project.learnings);
+        console.log(project.links)
+        let projectLinks = createProjectLinksElement(project.links);
+
         container.innerHTML += `
         <section class="section_container `+alt+`">
             <div class="ribbon" style="top:`+(800+800*i)+`px" id="`+project.idName+`">
@@ -26,27 +28,42 @@ function addPortfolioCases(){
                 </div>
             </div>
             <div class="context_container">
-                <div class="context_container_2">
-                    <div class="context_container_3">
+                <div class="context_container_2 ">
+                    <div class="context_container_3 hide slide_in_elem">
                         <h2>Info</h2>
                         <div class="i_l_seperation_bar"></div>
                         `+listInfo.outerHTML+`
                     </div>
-                    <div class="context_container_3">
+                    <div class="context_container_3 slide_in_elem">
                         <h2>Learnings</h2>
                         <div class="i_l_seperation_bar"></div>
                         `+listLearnings.outerHTML+`
                     </div>
                 </div>
+
+
             </div>
-            <div class="context_container_right">
+            <div class="context_container_right hide slide_in_elem">
                 <div class="context_img_container">
-                    <img src="public/images/portfolio/`+project.imgName+`" alt="`+project.name+` website">    
+                    <img src="public/images/portfolio/`+project.imgName+`" alt="`+project.name+` website">
                 </div>
+                `+projectLinks.outerHTML+`
             </div>
         </section>
         `
     });
+}
+function createProjectLinksElement(links){
+    let container = document.createElement('div');
+    container.classList.add("project_link_container");
+    if(links.github){
+        container.innerHTML+='<a href="'+links.github+'"><img src="public/images/icons/github.png" alt="Github logo"></a>'
+    }
+    if(links.website){
+        container.innerHTML+='<a href="'+links.website+'"><img src="public/images/icons/website.png" alt="Website icon"></a>'
+    }
+    
+    return container;
 }
 function createListElement(content){
     let ul = document.createElement('ul');

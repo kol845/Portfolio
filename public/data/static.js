@@ -19,7 +19,10 @@ const portfolioData = {
                     "Using npm packege 'nodemailer' to send emails",
                     "Creating cronjobs for schedualing tasks"
                 ],
-                "imgName":"futurekey.png"
+                "imgName":"futurekey.png",
+                "links":{
+                    "github":"https://github.com/kol845/futurekey"
+                }
             },
             {
                 "name": "Daily Habits",
@@ -40,7 +43,11 @@ const portfolioData = {
                     "Planing work",
                     "Communication and coding with others"
                 ],
-                "imgName":"dailyhabits.png"
+                "imgName":"dailyhabits.png",
+                "links":{
+                    "github":"https://github.com/kol845/Habit-Tracker",
+                    "website":"https://kol845.github.io/Habit-Tracker/"
+                }
             },
             {
                 "name": "Alert",
@@ -62,7 +69,10 @@ const portfolioData = {
                     "Backend deploment on Heroku platform",
                     "Functioning login system"
                 ],
-                "imgName":"alert.png"
+                "imgName":"alert.png",
+                "links":{
+                    "github":"https://github.com/kol845/alert"
+                }
             },
         
     ]

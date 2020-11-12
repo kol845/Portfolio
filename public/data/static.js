@@ -43,7 +43,7 @@ const portfolioData = {
                     "Planing work",
                     "Communication and coding with others"
                 ],
-                "imgName":"dailyhabits.png",
+                "imgName":"dailyhabits.gif",
                 "links":{
                     "github":"https://github.com/kol845/Habit-Tracker",
                     "website":"https://kol845.github.io/Habit-Tracker/"
@@ -69,7 +69,7 @@ const portfolioData = {
                     "Backend deploment on Heroku platform",
                     "Functioning login system"
                 ],
-                "imgName":"alert.png",
+                "imgName":"",
                 "links":{
                     "github":"https://github.com/kol845/alert"
                 }

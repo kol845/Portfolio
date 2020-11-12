@@ -15,14 +15,21 @@ function addPortfolioCases(){
         //                 </div>
         //             </div>
         //         </section>`;
+        
         let listInfo = createListElement(project.info);
         let listLearnings = createListElement(project.learnings);
-        console.log(project.links)
         let projectLinks = createProjectLinksElement(project.links);
+
+        let imageSrc = project.imgName;
+        if(!imageSrc || imageSrc == ""){ // If the project has no screen shoot image
+            imageSrc = "not_available.png";
+        }
+
+        const sectionHeight = 800;
 
         container.innerHTML += `
         <section class="section_container `+alt+`">
-            <div class="ribbon" style="top:`+(800+800*i)+`px" id="`+project.idName+`">
+            <div class="ribbon" style="top:`+(sectionHeight+sectionHeight*i)+`px" id="`+project.idName+`">
                 <div>
                     <p><em>`+project.headline.name+`</em> - `+project.headline.description+`</p>
                 </div>
@@ -45,7 +52,7 @@ function addPortfolioCases(){
             </div>
             <div class="context_container_right hide slide_in_elem">
                 <div class="context_img_container">
-                    <img src="public/images/portfolio/`+project.imgName+`" alt="`+project.name+` website">
+                    <img src="public/images/portfolio/`+imageSrc+`" alt="`+project.name+` website">
                 </div>
                 `+projectLinks.outerHTML+`
             </div>

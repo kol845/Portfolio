@@ -29,7 +29,7 @@
 }
 #welcome_container{
     text-align:right;
-    margin: 8vh auto 4vh auto;
+    margin: 88px auto 44px auto;
     width:50%;
 }
 #portf_welcome_message{
@@ -41,7 +41,7 @@
     color:white;
     font-size: 1.5em;
     line-height: 1.1;
-    background-image: linear-gradient(to bottom right, var(--background_first) 10vh, var(--background_second));
+    background-image: linear-gradient(to bottom right, var(--background_first) 110px, var(--background_second));
     text-align: center;
     display: block;
 }
@@ -58,7 +58,7 @@
     margin: auto auto;
 }
 #portf_content_container li{
-    margin:3vh 0px;
+    margin:33px 0px;
 }
 /* </intro> */
 
@@ -113,14 +113,14 @@
 .section_container{
     height:var(--section_height);
     width:100vw;
-    background-image: linear-gradient(to bottom right, var(--background_first) 10vh, var(--background_second));
+    background-image: linear-gradient(to bottom right, var(--background_first) 110px, var(--background_second));
     /* background-color: orange; */
     display:grid;
     grid-template-columns:1.3fr 1fr;
-    padding:5vh 5vw;
+    padding:55px 5vw;
 }
 .section_container_alt{
-    background-image: linear-gradient(to top right, var(--background_first) 10vh, var(--background_second));
+    background-image: linear-gradient(to top right, var(--background_first) 110px, var(--background_second));
     /* background-color: green; */
 
 }
@@ -153,7 +153,7 @@
     list-style-type: disc;
 }
 .context_container_3 li{
-    margin:2vh 0px;
+    margin:22px 0px;
 }
 .i_l_seperation_bar{
     height:3px;
@@ -172,19 +172,24 @@
 .context_img_container{
     height:80%;
     width:70%;
+    background-color: red;
 }
 .context_img_container img{
     height:100%;
     width:100%;
 }
 .hide{
-    opacity: 0;
+    opacity:0;
 }
 .project_link_container img{
     width:40px;
     height:40px;
     float:left;
     margin-right:60px;
+    border-radius: 50%;
+}
+.project_link_container img:hover{
+    box-shadow: 0px 0px 15px 2px white;
 }
 .project_link_container{
     margin-top:10px;
@@ -195,13 +200,13 @@
     /* text-align: left; */
     /* float: left; */
 }
-@media only screen and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
     #profile_picture_container{
         margin:0px 10vw 0px 20px;
     }
 
   }
-@media only screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     #welcome_container{
         width:70%;
     }
@@ -216,7 +221,7 @@
 
     }
 }
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     #welcome_container{
         width:100%;
     }
@@ -230,23 +235,23 @@
         
     }
     .section_container{
-        padding:5vh 1vw;
+        padding:55px 1vw;
     }
 }
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     #portf_intro_container #content_container{
         width:90%;
 
     }
 }
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     #portf_intro_container #content_container{
         width:95%;
     }
     #profile_picture_container{
         margin:0px 0vw 0px 20px;
     }
-    
+
 }
 .slide-in-right {
 	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

@@ -1,0 +1,297 @@
+:root {
+    --background_first: rgb(34,34,34);
+    --background_second: rgb(55,55,55);
+    --section_height: 700px;
+    /* --background_first: rgb(255,255,255);
+    --background_second: rgb(155, 155, 155); */
+}
+
+/* <intro> */
+#profile_picture{
+    height:100px;
+    width:100px;
+    margin:0;
+    float: right;
+    display:inline-block;
+}
+#profile_picture_container{
+    height:100px;
+    float: right;
+    display: block;
+    margin:0px 10vw 0px 20px;
+}
+.line_seperator{
+    width:3px;
+    border-radius: 20px;
+    background-color: white;
+    height:100px;
+    display:inline-block;
+    margin-right:30px;
+}
+#welcome_container{
+    text-align:right;
+    margin: 88px auto 44px auto;
+    width:50%;
+}
+#portf_welcome_message{
+    width:100%;
+    margin:auto;
+}
+#portf_intro_container{
+    height:var(--section_height);
+    color:white;
+    font-size: 1.5em;
+    line-height: 1.1;
+    background-image: linear-gradient(to bottom right, var(--background_first) 110px, var(--background_second));
+    text-align: center;
+    display: block;
+    
+}
+
+#portf_intro_container h2{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin:30px auto 20px auto;
+}
+
+#portf_intro_container #content_container{
+    width:50%;
+    text-align: left;
+    margin: auto auto;
+}
+#portf_content_container li{
+    margin:33px 0px;
+}
+/* </intro> */
+
+.ribbon{
+    width:105vw;
+    position: absolute;
+    left:-10px;
+    text-align: center;
+    transform: rotate(-5deg);
+    height:60px;
+    background-color: #fc7e00;
+}
+
+.ribbon div{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.6em;
+}
+.ribbon em{
+    font-weight: bold;
+    font-size: 1.65em;
+}
+.content_headline{
+    color:#fc7e00;
+    font-weight: bold;
+    text-align: start;
+    text-decoration: none;
+}
+.content_headline:hover{
+    letter-spacing: 1.5px;
+    cursor:pointer;
+}
+#portf_content_container p{
+    display:grid;
+    grid-template-columns:0.4fr 0.2fr 1fr;
+    align-items: center;
+    text-align: start;
+}
+.content_list_container{
+    display:list-item;
+    margin:20px 0px;
+}
+/* #portf_content_container li:hover{
+    letter-spacing: 1.5px;
+    cursor:pointer;
+} */
+.section_container{
+    height:var(--section_height);
+    width:100vw;
+    background-image: linear-gradient(to bottom right, var(--background_first) 110px, var(--background_second));
+    /* background-color: orange; */
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    padding:55px 5vw;
+}
+.section_container_alt{
+    background-image: linear-gradient(to top right, var(--background_first) 110px, var(--background_second));
+    /* background-color: green; */
+
+}
+.context_container{
+    width:60vw;
+    
+    margin-top: 200px;
+    text-align: center;
+    width:100%;
+}
+
+.context_container_2{
+    display: grid;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    grid-template-columns:1fr 1fr;
+    column-gap: 5vw;
+    
+}
+.context_container_3{
+    font-size: 18px;
+}
+
+.context_container_3 h2{
+    font-size: 26px;
+    font-weight: bold;
+}
+.context_container_3 ul{
+    text-align: left;
+    list-style-type: disc;
+}
+.context_container_3 li{
+    margin:22px 0px;
+}
+.i_l_seperation_bar{
+    height:3px;
+    border-radius: 20px;
+    background-color: white;
+    width:100px;
+    margin:20px auto;
+}
+.context_container_right{
+    width:100%;
+    /* margin-top: 200px; */
+    margin-right:5vw;
+    text-align: center;
+    float: right;
+}
+.context_img_container{
+    height:80%;
+    width:70%;
+}
+.context_img_container img{
+    height:100%;
+    width:100%;
+}
+.hide{
+    opacity:0;
+}
+.project_link_container img{
+    width:40px;
+    height:40px;
+    float:left;
+    margin-right:60px;
+    border-radius: 50%;
+}
+.project_link_container img:hover{
+    box-shadow: 0px 0px 15px 2px white;
+}
+.project_link_container{
+    margin-top:10px;
+
+}
+.project_link_container a{
+    /* float:left; */
+    /* text-align: left; */
+    /* float: left; */
+}
+@media screen and (max-width: 1600px) {
+    #profile_picture_container{
+        margin:0px 10vw 0px 20px;
+    }
+
+  }
+@media screen and (max-width: 1400px) {
+    #welcome_container{
+        width:70%;
+    }
+    #profile_picture_container{
+        margin:0px 20vw 0px 20px;
+    }
+    #portf_intro_container #content_container{
+        width:60%;
+    }
+    .context_img_container{
+        width:100%;
+
+    }
+}
+@media screen and (max-width: 1200px) {
+    #welcome_container{
+        width:100%;
+    }
+    #profile_picture_container{
+        margin:0px 20vw 0px 20px;
+    }
+    .context_container_2{
+        padding-left: 1vw;
+        padding-right: 1vw;
+        column-gap: 2vw;
+        
+    }
+    .section_container{
+        padding:55px 1vw;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #portf_intro_container #content_container{
+        width:90%;
+
+    }
+}
+@media screen and (max-width: 700px) {
+    #portf_intro_container #content_container{
+        width:95%;
+    }
+    #profile_picture_container{
+        margin:0px 0vw 0px 20px;
+    }
+
+}
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/*Slide in animations*/
+/* ----------------------------------------------
+ * Generated by Animista on 2020-11-11 13:50:11
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }

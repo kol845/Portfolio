@@ -16,8 +16,8 @@ export default {
                     "Created for Hyper Island brief", "Frontend: Vanila JS", "Backend: Express JS + SQLite"
                 ],
                 "learnings":[
-                    "Using npm packege 'nodemailer' to send emails",
-                    "Creating cronjobs for schedualing tasks"
+                    "Using npm package 'nodemailer' to send emails",
+                    "Creating cronjobs for scheduling tasks"
                 ],
                 "imgName":"futurekey.png",
                 "links":{
@@ -39,8 +39,8 @@ export default {
                     "Created for Hyper Island brief", "Vanila JS", "Collaboration effort"
                 ],
                 "learnings":[
-                    "Working with git",
-                    "Planing work",
+                    "Working with Git",
+                    "Planning work",
                     "Communication and coding with others"
                 ],
                 "imgName":"dailyhabits.gif",
@@ -66,7 +66,7 @@ export default {
                 "learnings":[
                     "React Native and Flask",
                     "API management",
-                    "Backend deploment on Heroku platform",
+                    "Backend deployment on Heroku platform",
                     "Functioning login system"
                 ],
                 "imgName":"",

@@ -1,6 +1,34 @@
+// To add new case: 
+// 1. Create a new object here with case info. 
+// 2. Update 'images' in index.js with case image
 export default {
     "projects":[
-        
+            {
+                "name": "Crypto Vs Wallstreet",
+                "idName": "crypto_vs_wallstreet",
+                "content":{
+                    "headline":"Crypto Vs Wallstreet",
+                    "description":"React + crypto/stock API"
+                },
+                "headline":{
+                    "name":"Crypto Vs Wallstreet",
+                    "description":"When will the Crypto market overtake Wallstreet?"
+                },
+                "info":[
+                    "Created for Hyper Island brief", "Frontend: React"
+                ],
+                "learnings":[
+                    "Using Gatsby",
+                    "Working with different external APIs",
+                    "Using a graph API",
+                    "Deploying to Netlify"
+                ],
+                "imgName":"cryptoVsWallstreet.png",
+                "links":{
+                    "github":"https://github.com/StockVsCrypto/crypto-vs-wallstreet",
+                    "website":"https://trusting-fermi-b3ac93.netlify.app/"
+                }
+            },
             {
                 "name": "Future Key",
                 "idName": "future_key",
@@ -36,7 +64,7 @@ export default {
                     "description":"Keep track of your habits"
                 },
                 "info":[
-                    "Created for Hyper Island brief", "Vanila JS", "Collaboration effort"
+                    "Created for Hyper Island brief", "Vanila JS"
                 ],
                 "learnings":[
                     "Working with Git",

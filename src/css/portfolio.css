@@ -83,6 +83,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 1.6em;
+    width:60%;
 }
 .ribbon em{
     font-weight: bold;
@@ -106,6 +107,7 @@
 }
 .content_list_container{
     display:list-item;
+    width:60vw;
     margin:20px 0px;
 }
 /* #portf_content_container li:hover{
@@ -238,11 +240,20 @@
     .section_container{
         padding:55px 1vw;
     }
+    .ribbon em{
+        font-size: 1.4em;
+    }
+    .ribbon div{
+        font-size: 1.35em;
+    }
 }
 @media screen and (max-width: 1000px) {
     #portf_intro_container #content_container{
         width:90%;
 
+    }
+    .content_list_container{
+        width:100%;
     }
 }
 @media screen and (max-width: 700px) {
@@ -251,6 +262,9 @@
     }
     #profile_picture_container{
         margin:0px 0vw 0px 20px;
+    }
+    .ribbon div{
+        width:80%;
     }
 
 }

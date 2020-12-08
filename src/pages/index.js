@@ -13,6 +13,7 @@ import Footer from '../components/Footer';
 import img1 from '../images/portfolio/cases/futurekey.png';
 import img2 from '../images/portfolio/cases/dailyhabits.gif';
 import img3 from '../images/portfolio/cases/not_available.png';
+import img4 from '../images/portfolio/cases/cryptoVsWallstreet.png';
 
 import gitIcon from '../images/icons/github.png';
 import webIcon from '../images/icons/website.png';
@@ -20,7 +21,7 @@ import webIcon from '../images/icons/website.png';
 import {debounce, checkScroll} from "../logic/event.js";
 
 
-const images = [img1, img2, img3]
+const images = [img4, img1, img2, img3]
 
 const createListElement = (content)=>{
     const listElems = []

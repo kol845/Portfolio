@@ -268,6 +268,41 @@
     }
 
 }
+/*Mobile Size*/
+@media screen and (max-width: 500px) {
+    #welcome_container{
+        margin-right:20px;
+    }
+    #profile_picture{
+    }
+    #profile_picture_container{
+        margin:0px 0vw 0px 20px;
+        display:block;
+    }
+    #portf_welcome_message{
+        display:block;
+        text-align:left;
+    }
+    .ribbon em{
+        font-size: 1.3em;
+    }
+    .ribbon div{
+        font-size: 1.25em;
+    }
+    .section_container{
+        grid-template-columns:1fr;
+        padding:0px 0px;
+        padding:25px 0vw;
+    }
+    .context_container{
+        height:50%;
+    }
+    .context_container_right{
+        height:50%;
+    }
+
+
+}
 .slide-in-right {
 	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

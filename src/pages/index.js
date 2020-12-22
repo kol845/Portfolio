@@ -1,4 +1,6 @@
 import React, {useEffect} from "react"
+import { Link } from "react-scroll"
+
 import './../css/reset.css';
 import './../css/global.css';
 import './../css/portfolio.css';
@@ -54,9 +56,19 @@ const getContents = ()=>{
         // this key thing seems to stop a error. But what does it do??
         <div className="content_list_container" key={i}> 
             <p>
-                <a className="content_headline" href={"#"+project.idName}>
-                    {project.content.headline}
-                </a>
+            <Link
+                activeClass="active"
+                to={project.idName}
+                spy={true}
+                smooth={true}
+                offset={-0}
+                duration={0}
+            >
+            <a className="content_headline">
+                {project.content.headline}
+            </a>
+            </Link>
+
                 <em style={{textAlign:"center"}}>
                     - 
                 </em>

@@ -5,20 +5,19 @@ import './../css/reset.css';
 import './../css/global.css';
 import './../css/portfolio.css';
 
-import profileImg from '../images/portfolio/transparent_round_profile.png';
+import profileImg from '../data/images/portfolio/transparent_round_profile.png';
 
 import data from '../data/static'
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Layout from "./layout";
 
-import img1 from '../images/portfolio/cases/futurekey.png';
-import img2 from '../images/portfolio/cases/dailyhabits.gif';
-import img3 from '../images/portfolio/cases/not_available.png';
-import img4 from '../images/portfolio/cases/cryptoVsWallstreet.png';
+import img1 from '../data/images/portfolio/cases/futurekey.png';
+import img2 from '../data/images/portfolio/cases/dailyhabits.gif';
+import img3 from '../data/images/portfolio/cases/not_available.png';
+import img4 from '../data/images/portfolio/cases/cryptoVsWallstreet.png';
 
-import gitIcon from '../images/icons/github.png';
-import webIcon from '../images/icons/website.png';
+import gitIcon from '../data/images/icons/github.png';
+import webIcon from '../data/images/icons/website.png';
 
 import {debounce, checkScroll} from "../logic/event.js";
 
@@ -139,45 +138,37 @@ export default function Portfolio() {
         window.addEventListener('scroll', debounce(checkScroll))
     });
     return (
-    <React.Fragment>
-        <div className="root">
-        <Header isPortfolio={true}/>
-                <section className="section_container" style={{backgroundColor:"orange"}} id="portf_intro_container">
-                    <div id="welcome_container">
-                        <div id="profile_picture_container">
-                            <div className="line_seperator"></div>
+    <Layout isPortfolio={true}>                
+        <section className="section_container" style={{backgroundColor:"orange"}} id="portf_intro_container">
+            {/* <div id="welcome_container">
+                <div id="profile_picture_container">
+                    <div className="line_seperator"></div>
 
-                            <img id="profile_picture" src={profileImg} alt="Profile"/>
+                    <img id="profile_picture" src={profileImg} alt="Profile"/>
 
-                        </div>
-
-                        <div id="portf_welcome_message">
-                            <p style={{fontWeight:"bold"}}>Welcome to my portfolio!</p><br/>
-                            <p>Here is a showcase of some projects that i’ve created during my years in KTH, Hyperisland and on my free time.</p>
-                        </div>
-                    </div>
-
-                    <div id="content_container">
-                        <h2>Content:</h2>
-                        <div id="portf_content_container">
-                            {/* {data.projects.forEach(project => {getContent(project)})} */}
-                            {getContents()}
-                        </div>
-                    </div>
-                </section>
-                <div id="projects_container">
-                    {getPortfolioCases()}
                 </div>
 
-                
+                <div id="portf_welcome_message">
+                    <p style={{fontWeight:"bold"}}>Welcome to my portfolio!</p><br/>
+                    <p>Here is a showcase of some projects that i’ve created during my years in KTH, Hyperisland and on my free time.</p>
+                </div>
+            </div> */}
 
-
-
-
-
-        <Footer/>
+            <div id="content_container_outer">
+                <div id="content_container_inner">
+                    <h2>Content:</h2>
+                    <div id="portf_content_container">
+                        {/* {data.projects.forEach(project => {getContent(project)})} */}
+                        {getContents()}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="projects_container">
+            {getPortfolioCases()}
         </div>
-    </React.Fragment>
+
+    </Layout>
 
     );
 }

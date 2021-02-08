@@ -1,7 +1,7 @@
 import React from 'react';
 import "./../css/footer.css";
-import github from "./../images/icons/github.png";
-import linkedin from "./../images/icons/linkedin.png";
+import github from "./../data/images/icons/github.png";
+import linkedin from "./../data/images/icons/linkedin.png";
 
 const Footer = () => (
     <div id="footer_root">

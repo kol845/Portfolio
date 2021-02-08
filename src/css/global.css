@@ -8,7 +8,10 @@ html, body {
     line-height:normal;
     scroll-behavior: smooth;
 }
-
+.root{
+    background-color:red;
+    min-height:100vh;
+}
 .root{
     display: grid;
     grid-gap: 0px;

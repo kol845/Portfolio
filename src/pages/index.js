@@ -40,9 +40,9 @@ export default function Home() {
                     <div id="rect-divider"/>
                 </div>
                 <p>
-                    A enthusiastic full stack developer with a passion for the future of tech.
+                    An enthusiastic full stack developer with a passion for the future of tech.
                     <br/><br/>
-                    I have theoretical knowlege from university(KTH) and practical knowlege from vocational education(Hyper Island). The best of both worlds basically.
+                    I have theoretical knowledge from university(KTH) and practical knowledge from vocational education(Hyper Island). The best of both worlds basically.
                 </p>
                 <div id="skill-container">
                     <p>Frontend <span className="primary-color">/</span> Backend <span className="primary-color">/</span> Software</p>

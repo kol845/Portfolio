@@ -1,3 +1,7 @@
+:root{
+    --primary-color: #fc7e00;
+    --primary-font:monospace;
+}
 html, body {
     /* max-width: 100%; */
     overflow-x: hidden;

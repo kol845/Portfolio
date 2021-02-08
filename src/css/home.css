@@ -1,56 +1,77 @@
 :root {
-    --background_first: rgb(34,34,34);
-    --background_second: rgb(78,78,78);
+    --background: rgb(78,78,78);
+    --round-radious:10px;
     /* --background_first: rgb(255,255,255);
     --background_second: rgb(155, 155, 155); */
-  }
-img{
-    width:99.2vw;
-    height:60vh;
-    margin:0;
-    padding:0;
 }
-.background_box{
-    width: 100%;
-    background-image: linear-gradient(to bottom right, var(--background_first) 10vh, var(--background_second));
-
-
+.primary-color{
+    color:var(--primary-color);
 }
-.content_box{
-    align-items: center;
-    width:60vw;
-    margin: 20px auto;
+.underline{
+    text-decoration: underline;;
 }
-.content_box_sub{
-    margin: 20px 10px;
-    font-weight: normal;
-    font-size:16px;
-    text-align:left;
-    width:80%;
+#home-body{
+    background-color: var(--background);
+    padding:70px 0px;
 }
-.content_box_sub_sub{
-    margin:20px 0px
+#left-text-container{
+    margin-left:15vw;
+    width:29vw;
 }
-.content_box_sub_content{
-    width:100%;
+#headline-container{
+    margin-bottom: 16px;
 }
-.content_box_sub_title{
-    font-weight: bold;
+#headline-container h1{
+    font-size:36px;
+}
+#rect-divider{
+    width:60px;
+    height:8px;
+    background-color: white;
+    border-radius:2px;
+}
+#left-text-container p{
     font-size:18px;
 }
-.title{
-    margin: 10px auto;
-    color:#fc7e00;
-    font-weight: bold;
-    font-size:25px;
-    text-align:center;
+#skill-container{
+    margin-top:16px;
+    margin-bottom: 26px;
+    padding:10px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius:var(--round-radious);
+    display: inline-block;
+    
 }
-.coding_bracket{
-    width:13px;
-    height:25px;
-    margin:0;
-    padding:0;
+#skill-container p{
+    font-size:24px;
 }
+
+.cta-button{
+    font: var(--primary-font);
+    font-size:24px;
+    padding:10px;
+    background-color:var(--primary-color);
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius:var(--round-radious);
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    
+}
+
+
+/*HOVERS*/
+.cta-button:hover{
+    background-color:white;
+    color:var(--primary-color);
+
+    
+}
+
+/*MEDIA*/
 @media (max-width:500px){
     img{
         height: 30vh;

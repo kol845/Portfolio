@@ -7,36 +7,9 @@
 }
 
 /* <intro> */
-#profile_picture{
-    height:100px;
-    width:100px;
-    margin:0;
-    float: right;
-    display:inline-block;
-}
-#profile_picture_container{
-    height:100px;
-    float: right;
-    display: block;
-    margin:0px 10vw 0px 20px;
-}
-.line_seperator{
-    width:3px;
-    border-radius: 20px;
-    background-color: white;
-    height:100px;
-    display:inline-block;
-    margin-right:30px;
-}
-#welcome_container{
-    text-align:right;
-    margin: 88px auto 44px auto;
-    width:50%;
-}
-#portf_welcome_message{
-    width:100%;
-    margin:auto;
-}
+
+
+
 #portf_intro_container{
     height:var(--section_height);
     color:white;
@@ -48,26 +21,7 @@
     
 }
 
-#portf_intro_container h2{
-    font-size: 1.2em;
-    font-weight: bold;
-    margin:30px auto 20px auto;
-}
 
-#portf_intro_container #content_container_inner{
-    width:50%;
-    text-align: left;
-}
-#portf_intro_container #content_container_outer{
-    width:100%;
-    height:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-#portf_content_container li{
-    margin:33px 0px;
-}
 /* </intro> */
 
 .ribbon{
@@ -78,6 +32,7 @@
     transform: rotate(-5deg);
     height:60px;
     background-color: #fc7e00;
+    box-shadow: 2px 2px 10px #fc7e00;
 }
 
 .ribbon div{
@@ -95,31 +50,8 @@
     font-weight: bold;
     font-size: 1.65em;
 }
-.content_headline{
-    color:#fc7e00;
-    font-weight: bold;
-    text-align: start;
-    text-decoration: none;
-}
-.content_headline:hover{
-    letter-spacing: 1.5px;
-    cursor:pointer;
-}
-#portf_content_container p{
-    display:grid;
-    grid-template-columns:0.4fr 0.2fr 1fr;
-    align-items: center;
-    text-align: start;
-}
-.content_list_container{
-    display:list-item;
-    width:60vw;
-    margin:20px 0px;
-}
-/* #portf_content_container li:hover{
-    letter-spacing: 1.5px;
-    cursor:pointer;
-} */
+
+
 .section_container{
     height:var(--section_height);
     width:100vw;
@@ -216,9 +148,7 @@
 
   }
 @media screen and (max-width: 1400px) {
-    #welcome_container{
-        width:70%;
-    }
+
     #profile_picture_container{
         margin:0px 20vw 0px 20px;
     }
@@ -230,10 +160,9 @@
 
     }
 }
+
 @media screen and (max-width: 1200px) {
-    #welcome_container{
-        width:100%;
-    }
+
     #profile_picture_container{
         margin:0px 20vw 0px 20px;
     }
@@ -253,13 +182,13 @@
         font-size: 1.35em;
     }
 }
+@media screen and (max-width: 1100px) {
+    
+}
 @media screen and (max-width: 1000px) {
     #portf_intro_container #content_container{
         width:90%;
 
-    }
-    .content_list_container{
-        width:100%;
     }
 }
 @media screen and (max-width: 700px) {
@@ -276,19 +205,8 @@
 }
 /*Mobile Size*/
 @media screen and (max-width: 500px) {
-    #welcome_container{
-        margin-right:20px;
-    }
-    #profile_picture{
-    }
-    #profile_picture_container{
-        margin:0px 0vw 0px 20px;
-        display:block;
-    }
-    #portf_welcome_message{
-        display:block;
-        text-align:left;
-    }
+
+
     .ribbon em{
         font-size: 1.3em;
     }

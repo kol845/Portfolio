@@ -1,12 +1,10 @@
 import React from "react"
 
-import './../css/reset.css';
-import './../css/global.css';
 import './../css/home.css';
 import {navigate} from 'gatsby'; //import navigate from gatsby
 
 
-import Layout from "./layout"
+import Layout from "./../components/layout"
 
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -14,7 +12,7 @@ import Img from "gatsby-image"
 export default function Home() {
     const data = useStaticQuery(graphql`
         query {
-        file(relativePath: { eq: "images/home/drama_pic.png" }) {
+        file(relativePath: { eq: "images/home/shot_3.png" }) {
             childImageSharp {
                 # Specify a fixed image and fragment.
                 # The default width is 400 pixels
@@ -42,7 +40,9 @@ export default function Home() {
                 <p>
                     An enthusiastic full stack developer with a passion for the future of tech.
                     <br/><br/>
-                    I have theoretical knowledge from university(KTH) and practical knowledge from vocational education(Hyper Island). The best of both worlds basically.
+                    I have theoretical knowledge from university, <span style={{fontWeight:'bold'}}>KTH</span>, 
+                    and practical knowledge from vocational education, <span style={{fontWeight:'bold'}}>Hyper Island</span>. 
+                    The best of both worlds basically.
                 </p>
                 <div id="skill-container">
                     <p>Frontend <span className="primary-color">/</span> Backend <span className="primary-color">/</span> Software</p>

@@ -22,11 +22,11 @@
 #left-text-container{
     width:500px;
     display:inline-block;
-    margin:0 5vw;
+    margin:0 3vw;
     z-index:1;
 }
 #headline-container{
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 #headline-container h1{
     font-size:36px;
@@ -41,8 +41,8 @@
     font-size:18px;
 }
 #skill-container{
-    margin-top:16px;
-    margin-bottom: 26px;
+    margin-top:24px;
+    margin-bottom: 24px;
     padding:10px;
     background-color: rgba(255,255,255,0.05);
     border-radius:var(--round-radious);
@@ -70,7 +70,7 @@
 }
 /*Right Content*/
 #right-content-container{
-    margin:0 5vw;
+    margin:0 3vw;
     opacity:0.7;
 }
 /*HOVERS*/

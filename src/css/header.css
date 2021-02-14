@@ -45,6 +45,9 @@
     text-decoration:none;
     /* margin:0px 15px; */
 }
+a{
+  transition: letter-spacing 0.1s;
+}
 a:hover:not(.hamburger) {
     /* background-color: #ddd; */
     /* font-weight:normal; */

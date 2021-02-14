@@ -11,13 +11,12 @@ html, body {
 .root{
     background-color:red;
     min-height:100vh;
-}
-.root{
     display: grid;
     grid-gap: 0px;
     font-family: monospace;
     background-color:#222222;
     color:rgba(255, 255, 255, 0.900);
 }
+
 
 

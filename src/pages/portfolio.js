@@ -1,15 +1,14 @@
 import React, {useEffect} from "react"
-import { Link } from "react-scroll"
 
-import './../css/reset.css';
-import './../css/global.css';
 import './../css/portfolio.css';
 
-import profileImg from '../data/images/portfolio/transparent_round_profile.png';
 
 import data from '../data/static'
 
-import Layout from "./layout";
+import Layout from "../components/layout";
+import ContentList from "./../components/ContentList";
+import ScrollTopArrow from "./../components/ScrollTopArrow";
+
 
 import img1 from '../data/images/portfolio/cases/futurekey.png';
 import img2 from '../data/images/portfolio/cases/dailyhabits.gif';
@@ -49,37 +48,7 @@ return linksArray;
 }
 
 
-const getContents = ()=>{
-    const contents = []
-    data.projects.forEach((project, i) =>{contents.push(
-        // this key thing seems to stop a error. But what does it do??
-        <div className="content_list_container" key={i}> 
-            <p>
-            <Link
-                activeClass="active"
-                to={project.idName}
-                spy={true}
-                smooth={true}
-                offset={-0}
-                duration={0}
-            >
-            <a className="content_headline">
-                {project.content.headline}
-            </a>
-            </Link>
-
-                <em style={{textAlign:"center"}}>
-                    - 
-                </em>
-                <em>
-                    {project.content.description}
-                </em>
-            </p>
-        </div>
-    )});
-    return contents;
-}
-const getPortfolioCases = ()=>{
+const getPortfolioCases = () => {
     const cases = []
     data.projects.forEach((project, i) =>{
         const caseImg = images[i];
@@ -118,7 +87,6 @@ const getPortfolioCases = ()=>{
                 </div>
             </div>
             
-
             <div className="context_container_right slide_in_elem hide">
                 <div className="context_img_container">
                     <img src={caseImg} alt={project.name+" website"}/>
@@ -139,35 +107,16 @@ export default function Portfolio() {
     });
     return (
     <Layout isPortfolio={true}>                
-        <section className="section_container" style={{backgroundColor:"orange"}} id="portf_intro_container">
-            {/* <div id="welcome_container">
-                <div id="profile_picture_container">
-                    <div className="line_seperator"></div>
+        <section className="section_container"  id="portf_intro_container">
 
-                    <img id="profile_picture" src={profileImg} alt="Profile"/>
 
-                </div>
+            <ContentList data={data.projects}/>
 
-                <div id="portf_welcome_message">
-                    <p style={{fontWeight:"bold"}}>Welcome to my portfolio!</p><br/>
-                    <p>Here is a showcase of some projects that i’ve created during my years in KTH, Hyperisland and on my free time.</p>
-                </div>
-            </div> */}
-
-            <div id="content_container_outer">
-                <div id="content_container_inner">
-                    <h2>Content:</h2>
-                    <div id="portf_content_container">
-                        {/* {data.projects.forEach(project => {getContent(project)})} */}
-                        {getContents()}
-                    </div>
-                </div>
-            </div>
         </section>
         <div id="projects_container">
             {getPortfolioCases()}
         </div>
-
+        <ScrollTopArrow/>
     </Layout>
 
     );

@@ -6,6 +6,9 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Pebo",
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

@@ -52,7 +52,7 @@ export default function Home() {
             <div id="right-content-container">
                 <Img
                     fixed={data.file.childImageSharp.fixed}
-                    alt="alt-img-tag"
+                    alt="Pebo posing in suite. Looking professional."
                 />
             </div>
         </div>

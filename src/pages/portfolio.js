@@ -6,6 +6,7 @@ import './../css/portfolio.css';
 import data from '../data/static'
 
 import Layout from "../components/layout";
+import CaseCard from "../components/CaseCard";
 import ContentList from "./../components/ContentList";
 import ScrollTopArrow from "./../components/ScrollTopArrow";
 
@@ -109,12 +110,30 @@ export default function Portfolio() {
     <Layout isPortfolio={true}>                
         <section className="section_container"  id="portf_intro_container">
 
-
             <ContentList data={data.projects}/>
 
         </section>
+        
         <div id="projects_container">
-            {getPortfolioCases()}
+        {data.projects.map((project, i) =>{
+            const caseImg = images[i];
+            let alt = ""
+            if(i%2===0){ // Switch to alternative section_container, with the diffrent background image.
+                alt = "section_container_alt"
+            };
+            const sectionHeight = 800;
+            return(
+            <section className={"section_container "+alt} key={i}>
+                <div className="ribbon" style={{top:(sectionHeight+sectionHeight*i)+"px"}} id={project.idName}>
+                    <div>
+                        <p><em>{project.headline.name}</em> - {project.headline.description}</p>
+                    </div>
+                </div>
+                <div className="card-container">
+                    <CaseCard project={project} caseImg={caseImg}></CaseCard>
+                </div>
+            </section>
+        )})}
         </div>
         <ScrollTopArrow/>
     </Layout>

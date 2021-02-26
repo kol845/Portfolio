@@ -18,10 +18,13 @@ const ContentList = (props) => {
                                 <Link
                                     activeClass="active"
                                     to={item.idName}
+                                    href="/#"
+                                    style={{ textDecoration: 'none' }}
                                     spy={true}
-                                    smooth={true}
-                                    offset={-0}
+                                    smooth={false}
+                                    offset={0}
                                     duration={0}
+                                    delay={0}
                                 >   
                                     <a className="content_headline">
                                         {item.content.headline}

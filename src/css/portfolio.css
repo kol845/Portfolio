@@ -141,6 +141,13 @@
     /* text-align: left; */
     /* float: left; */
 }
+
+.card-container{
+    margin-top:40px;
+    margin-left:20vw;
+    
+}
+
 @media screen and (max-width: 1600px) {
     #profile_picture_container{
         margin:0px 10vw 0px 20px;

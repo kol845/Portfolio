@@ -33,7 +33,7 @@ export default function Home() {
             <div id="left-text-container">
                 <div id="headline-container">
                     <h1>
-                        Hi, i'm Pebo Hamza
+                        Hi, I'm Pebo Hamza
                     </h1>
                     <div id="rect-divider"/>
                 </div>
@@ -45,7 +45,7 @@ export default function Home() {
                     The best of both worlds basically.
                 </p>
                 <div id="skill-container">
-                    <p>Frontend <span className="primary-color">/</span> Backend <span className="primary-color">/</span> Software</p>
+                    <p>Backend <span className="primary-color">/</span> Frontend <span className="primary-color">/</span> Software</p>
                 </div>
                 <button className="cta-button" onClick={()=>portfolioPage()}>Portfolio</button>
             </div>

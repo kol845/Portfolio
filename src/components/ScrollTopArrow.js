@@ -14,10 +14,11 @@ const ScrollTopArrow = (props) => {
     };
   
     const scrollTop = () =>{
-      window.scrollTo({top: 0, behavior: 'smooth'});
+      if(typeof window !== "undefined")
+        window.scrollTo({top: 0, behavior: 'smooth'});
     };
-  
-    window.addEventListener('scroll', checkScrollTop)
+    if(typeof window !== "undefined")
+      window.addEventListener('scroll', checkScrollTop)
     return(
         <FaArrowCircleUp 
             className="scrollTop" 

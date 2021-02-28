@@ -77,25 +77,12 @@ a:hover:not(.hamburger) {
     }
 
 }
-@media screen and (max-width: 600px) {
-    .header_content a:not(:first-child) {display: none;}
-    .header_content a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .header_content.responsive {position: relative;}
-    .header_content.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .header_content.responsive a:not(.hamburger) {
-      float: none;
-      display: block;
-      
-    }
+@media screen and (max-width: 700px) {
 
-
+    .header{
+      font-size:14px;
+    }
+    .home_btn_container{
+      grid-template-columns:2fr 1fr;
+    }
   }

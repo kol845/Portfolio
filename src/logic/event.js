@@ -13,7 +13,8 @@ function debounce(func, wait = 15, immediate = true) { // Function that ensures 
     };
 };
 function checkScroll(e){
-    const slideInElems = document.querySelectorAll(".slide_in_elem");
+    const animationName = "slide-in-bottom"
+    const slideInElems = document.querySelectorAll(".animated");
     slideInElems.forEach(slideElem=>{
 
         const bottomWindow = (window.scrollY + window.innerHeight);
@@ -23,20 +24,16 @@ function checkScroll(e){
         const isHalfShown = bottomWindow - slideElem.offsetHeight/2 > slideElem.offsetTop;
         const isNotScrolledPastBottom = window.scrollY < imageBottom;
         const isNotScrolledPastTop = bottomWindow > imageTop;
-        const isHidden = slideElem.classList.contains("hide")
         // If we are halfway trough image
-        if ((isHidden && isHalfShown && isNotScrolledPastBottom)) {
-            slideElem.classList.add("slide-in-right")
-            slideElem.classList.remove("hide")
+        if ((isHalfShown && isNotScrolledPastBottom)) {
+            slideElem.classList.add(animationName)
         }
         // If the top of the image is still shown
-        else if(!isHidden && isNotScrolledPastTop){
-            slideElem.classList.add("slide-in-right")
-            slideElem.classList.remove("hide")  
+        else if(isNotScrolledPastTop){
+            slideElem.classList.add(animationName)
         }
         else{
-            slideElem.classList.remove("slide-in-right");
-            slideElem.classList.add("hide")
+            slideElem.classList.remove(animationName);
         }
       });
 }

@@ -12,7 +12,7 @@ import Img from "gatsby-image"
 export default function Home() {
     const data = useStaticQuery(graphql`
         query {
-        file(relativePath: { eq: "images/home/shot_3.png" }) {
+        file(relativePath: { eq: "images/home/drama_pic.png" }) {
             childImageSharp {
                 # Specify a fixed image and fragment.
                 # The default width is 400 pixels

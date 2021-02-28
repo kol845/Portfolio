@@ -1,6 +1,8 @@
 :root{
     --primary-color: #fc7e00;
     --primary-font:monospace;
+    --card-focus-bg:rgba(0, 0, 0, 0.76);
+    --card-focus-bg-transition:rgba(0, 0, 0, 0.336);
 }
 html, body {
     /* max-width: 100%; */

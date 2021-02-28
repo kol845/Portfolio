@@ -12,25 +12,26 @@ export default {
             },
             "headline":{
                 "name":"FakeNews",
-                "description":"News website with AI generated articles"
+                "description":"News website with CMS + AI generated articles"
             },
             "info":[
                 "Created for Hyper Island CMS brief", 
                 "News articles made by real headlines and fake AI generated text", 
                 "Contains simple CMS for adding and removing articles",
                 "Frontend: React, Gatsby",
-                "Backend: Backend"
+                "Backend: PHP - Slim"
             ],
             "learnings":[
-                "UI/UX design principles",
-                "Figma",
-                "Working with a client",
-                "User research",
-                
+                "Creating a CMS",
+                "Working with a Gatsby Starter",
+                "Creating PHP backend",
             ],
             "imgName":"gotm.png",
             "links":{
+                "github":"https://github.com/kol845/fake-news",
+                "github2":"https://github.com/kol845/fake-news-backend",
 
+                "website":"https://gifted-dijkstra-b5bb7b.netlify.app/"
             }
         },
         {
@@ -56,7 +57,6 @@ export default {
             ],
             "imgName":"gotm.png",
             "links":{
-
             }
         },
         {

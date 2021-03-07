@@ -35,6 +35,7 @@ const CaseCard = (props) => {
     let [about, setAbout] = useState(true);
     let [learnings, setLearnings] = useState(false);
     let [active, setActive] = useState(false); // Used to remove tab seperator bar on hover
+    let [imageId, imageID] = useState(0);
     const clickAbout =()=>{
         setAbout(!about);
         setLearnings(false)
@@ -47,8 +48,9 @@ const CaseCard = (props) => {
     let listLearnings = createListElement(props.project.learnings);
     let selectedList = (about ? listAbout:listLearnings);
     let projectLinks = createProjectLinksElement(props.project.links);
+    
     return(
-            <div className="card-root animated">
+            <div className="card-root animated hide">
                 <div className="tab-container">
                 <button className={'card-tab '+((about ? "card-highlight":""))}
                     onMouseEnter={() => {
@@ -75,7 +77,7 @@ const CaseCard = (props) => {
                     </button>
                 </div>
                 
-                <div className="card-body"style={{backgroundImage:`url(${props.caseImg})`}}>
+                <div className="card-body"style={{backgroundImage:`url(${props.caseImg[0]})`}}>
                     {((about || learnings) && (
                         <div className="info-container">
                             {selectedList}

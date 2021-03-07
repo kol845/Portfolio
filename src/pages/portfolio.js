@@ -17,11 +17,12 @@ import img3 from '../data/images/portfolio/cases/not_available.png';
 import img4 from '../data/images/portfolio/cases/cryptoVsWallstreet.png';
 import img5 from '../data/images/portfolio/cases/gotm.png';
 import img6 from '../data/images/portfolio/cases/fakenews.png';
+import img7 from '../data/images/portfolio/cases/fakenews2.png';
 
 import {debounce, checkScroll} from "../logic/event.js";
 
 
-const images = [img6, img5, img4, img1, img2, img3]
+const images = [[img6, img7], [img5], [img4], [img1], [img2], [img3]]
 
 export default function Portfolio() {
 

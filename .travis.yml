@@ -7,8 +7,8 @@ node_js:
 - node
 
 # By default
-# install:
-# - npm ci
+install:
+- npm install
 
 script:
 - gatsby build

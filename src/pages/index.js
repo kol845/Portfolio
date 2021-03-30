@@ -12,7 +12,7 @@ import Img from "gatsby-image"
 export default function Home() {
     const data = useStaticQuery(graphql`
         query {
-        file(relativePath: { eq: "images/home/drama_pic.png" }) {
+        file(relativePath: { eq: "images/home/drama_pic_2.png" }) {
             childImageSharp {
                 # Specify a fixed image and fragment.
                 # The default width is 400 pixels
@@ -33,6 +33,7 @@ export default function Home() {
             <div id="left-text-container">
                 <div id="headline-container">
                     <h1>
+                        Travis test. Did it work?<br/><br/>
                         Hi, I'm Pebo Hamza
                     </h1>
                     <div id="rect-divider"/>

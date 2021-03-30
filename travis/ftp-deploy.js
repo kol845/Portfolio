@@ -20,7 +20,7 @@ const config={
     // Passive mode is forced (EPSV command is not sent)
     forcePasv: true,
     // use sftp or ftp
-    sftp: false
+    sftp: true
 }
 console.log("Name: "+ NAME)
 console.log("Host: "+ HOST)

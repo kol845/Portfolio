@@ -22,7 +22,8 @@ const config={
     // use sftp or ftp
     sftp: false
 }
-
+console.log("Name: "+ NAME)
+console.log("Host: "+ HOST)
 console.log("Uploading build to pebo.io...")
 ftpDeploy
     .deploy(config)

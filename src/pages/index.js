@@ -33,7 +33,6 @@ export default function Home() {
             <div id="left-text-container">
                 <div id="headline-container">
                     <h1>
-                        Travis test. Did it work? 2<br/><br/>
                         Hi, I'm Pebo Hamza
                     </h1>
                     <div id="rect-divider"/>

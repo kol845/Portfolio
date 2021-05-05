@@ -22,7 +22,7 @@ const createProjectLinksElement = (links)=>{
         linksArray.push(<a href={links.github}><img src={gitIcon} alt="Github logo"/></a>)
     }
     if(links.github2){
-        linksArray.push(<a href={links.github}><img src={gitIcon} alt="Github logo"/></a>)
+        linksArray.push(<a href={links.github2}><img src={gitIcon} alt="Github logo"/></a>)
     }
     if(links.website){
         linksArray.push(<a href={links.website}><img src={webIcon} alt="Website Icon"/></a>)

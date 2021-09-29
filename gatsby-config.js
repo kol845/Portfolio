@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "GTM-KJQ6TMM",
+        id: "GTM-TPVPSGV",
   
         // Include GTM in development.
         //

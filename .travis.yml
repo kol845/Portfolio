@@ -1,14 +1,12 @@
-
-
 language: node_js
 
 node_js:
-- node
+  - node
 
 # By default
 install:
-- npm install
+  - npm install -f
 
 script:
-- gatsby build
-- node travis/ftp-deploy.js
+  - gatsby build
+  - node travis/ftp-deploy.js

@@ -15,8 +15,8 @@ export default {
         description: "Crypto Currency Exchange",
       },
       info: [
-        "Sweden's Largest Cryptocurrency Exchange Platform",
         "Full time employment @Safello",
+        "Sweden's Largest Cryptocurrency Exchange Platform",
         "Working on Mobile, Web, Backend development",
         "Since 2021",
       ],

@@ -4,15 +4,41 @@
 export default {
   projects: [
     {
+      name: "Peblett",
+      idName: "peblett",
+      content: {
+        headline: "Peblett",
+        description: "React, 'ethers' library",
+      },
+      headline: {
+        name: "Peblett",
+        description: "Ethereum wallet",
+      },
+      info: [
+        "Created in Hyper Island",
+        "Create a wallet and store your ETH",
+        "Working with blockchains",
+      ],
+      learnings: [
+        "Blockchain logic",
+        "'ethers' library for Ethereum interfacing",
+      ],
+      imgName: "peblett.png",
+      links: {
+        github: "https://github.com/kol845/peblett",
+        website: "https://priceless-bohr-0720c0.netlify.app/",
+      },
+    },
+    {
       name: "Necro",
       idName: "necro",
       content: {
-        headline: "Neco - Platformer game",
+        headline: "Neco",
         description: "Godot, Game Engine",
       },
       headline: {
-        name: "Neco - Platformer game",
-        description: "Puzzle platforming game",
+        name: "Neco",
+        description: "Puzzle platforming game, Gadot Game Engine",
       },
       info: [
         "Created in Hyper Island",

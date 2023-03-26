@@ -4,15 +4,44 @@
 export default {
   projects: [
     {
+      name: "Safello",
+      idName: "safello",
+      content: {
+        headline: "Safello",
+        description: "React, React Native, NextJS, Express, GraphQL, etc",
+      },
+      headline: {
+        name: "Safello",
+        description: "Crypto Currency Exchange",
+      },
+      info: [
+        "Sweden's Largest Cryptocurrency Exchange Platform",
+        "Full time employment @Safello",
+        "Working on Mobile, Web, Backend development",
+        "Since 2021",
+      ],
+      learnings: [
+        "Collaborating with colleagues in a fast-paced environment",
+        "Maintaining and expanding professional code with a large user base",
+        "Taking responsibility and working independently on tasks",
+        "Testing and improving product quality",
+      ],
+      imgName: "safello.png",
+      links: {
+        github: "https://github.com/Safello",
+        website: "https://safello.com/",
+      },
+    },
+    {
       name: "Peblett",
       idName: "peblett",
       content: {
         headline: "Peblett",
-        description: "React, 'ethers' library",
+        description: "React, Web3.js",
       },
       headline: {
         name: "Peblett",
-        description: "Ethereum wallet",
+        description: "Your personal Ethereum wallet on steroids",
       },
       info: [
         "Created in Hyper Island",
@@ -21,7 +50,7 @@ export default {
       ],
       learnings: [
         "Blockchain logic",
-        "'ethers' library for Ethereum interfacing",
+        "Web3.js for interacting with Ethereum network",
       ],
       imgName: "peblett.png",
       links: {
@@ -38,17 +67,17 @@ export default {
       },
       headline: {
         name: "Neco",
-        description: "Puzzle platforming game, Gadot Game Engine",
+        description: "A challenging puzzle-platformer game",
       },
       info: [
-        "Created in Hyper Island",
-        "Survive this platformer and make it to the other side.",
+        "Created during my time at Hyper Island",
+        "A challenging puzzle-platformer game",
         "First time using Gadot Game Engine",
       ],
       learnings: [
-        "Using a game engine",
-        "Graphics, character sprites",
-        "Gaming logic (Gravity, speed, collision, etc)",
+        "Using the Godot game engine to create games",
+        "Implementing game mechanics such as gravity and collision detection",
+        "Designing levels that balance difficulty with player engagement",
       ],
       imgName: "necro.png",
       links: {
